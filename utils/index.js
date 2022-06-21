@@ -16,7 +16,7 @@ export const createUser = async (username, email, password, setter) => {
             body: JSON.stringify({
                 username: username,
                 email:  email,
-                password: password
+                password: password,
             }),
         });
         const data = await res.json();
