@@ -1,14 +1,115 @@
 .App {
+  background-color:lightslategray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.pictureContainer {
+  display: flex;
+  height: 250px;
+  width: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: monospace;
+  background-color: lavender;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-bottom: 10px;
+  margin: 0px;
+  margin-top: 50px;
+}
+
+.likePillButton {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background-color: lightcoral;
+  border-bottom-left-radius: 30px;
+  color: black;
+  font-weight:bold;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 1px 1px 1px lightpink;
+  border: 2px solid lightcoral;
+}
+
+.likePillButton:hover {
+  background-color: lightpink;
+  border: 2px dotted lightpink;
+  box-shadow: 0px 3px 20px 5px palevioletred;
+}
+
+.tweetPillButton {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background-color: cornflowerblue;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 1px 1px 1px lightblue;
+  border: 2px solid cornflowerblue;
+}
+
+.tweetPillButton:hover {
+  background-color: lightskyblue;
+  border: 2px dotted lightskyblue;
+  box-shadow: 0px 3px 20px 5px lightblue;
+}
+
+.test1PillButton {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background-color: lawngreen;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 1px 1px 1px lightgreen;
+  border: 2px solid lawngreen;
+}
+
+.test1PillButton:hover {
+  background-color: lightgreen;
+  border: 2px dotted lightgreen;
+  box-shadow: 0px 3px 20px 5px palegreen;
+}
+
+.test2PillButton {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background-color: yellow;
+  border-bottom-right-radius: 30px;
+  color: black;
+  font-weight:bold;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 1px 1px 1px khaki;
+  border: 2px solid yellow;
+}
+
+.test2PillButton:hover {
+  background-color: palegoldenrod;
+  border: 2px dotted khaki;
+  box-shadow: 0px 3px 20px 5px khaki;
 }
