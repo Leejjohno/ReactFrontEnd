@@ -68,9 +68,9 @@ export const deleteUser = async (username, password, setDeleteUser) => {
     }
 };
 
-export const updateEmail = async (username, email, password, setUpdateEmail) => {
+export const updateUser = async (username, email, password, setUpdateUser) => {
     try {
-        const res = await fetch(`${process.env.REACT_APP_REST_API}user/:email`, {
+        const res = await fetch(`${process.env.REACT_APP_REST_API}user/:account`, {
             method: "PUT",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
