@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { updateUser } from "../../utils";
 
-export const updateUser = ( { setUpdateEmail, isLoggedIn } ) => {
+export const updateUser = ( { setUpdateUser, isLoggedIn } ) => {
+    const [username, setUsername] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
 
     const submitHandler = (e) => {
         e.preventDefault();
-        updateEmail(username, email, password, setUpdateEmail, isLoggedIn)
+        updateUser(username, email, password, setUpdateUser, isLoggedIn)
     }
 
     return(
