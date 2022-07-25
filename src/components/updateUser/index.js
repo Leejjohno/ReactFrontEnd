@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { updateEmail } from "../../utils";
+import { updateUser } from "../../utils";
 
-export const UpdateEmail = ( { setUpdateEmail, isLoggedIn } ) => {
-    const [username, setUsername] = useState();
+export const updateUser = ( { setUpdateEmail, isLoggedIn } ) => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
 
