@@ -81,7 +81,7 @@ export const updateUser = async (username, email, password, setUpdateUser) => {
         });
         const data = await res.json();
         console.log(data);
-        setUpdateEmail(data.user.email)
+        setUpdateUser(data.user.email)
 
     } catch (error) {
         console.log(error)
